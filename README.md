@@ -1,4 +1,4 @@
-# Deep-Learning-Terrain-Navigation
+# Terrain Navigation
 
 ## Overview
 
