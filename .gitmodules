@@ -1,0 +1,15 @@
+[submodule "learning_ros_external_packages"]
+	path = ros_packages/dependencies/learning_ros_external_packages
+	url = https://github.com/wsnewman/learning_ros_external_packages.git
+[submodule "ros_packages/dependencies/hector_gazebo"]
+	path = ros_packages/dependencies/hector_gazebo
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
+[submodule "ros_packages/dependencies/hector_tracked_vehicles_common"]
+	path = ros_packages/dependencies/hector_tracked_vehicles_common
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_tracked_vehicles_common.git
+[submodule "ros_packages/dependencies/openslam_gmapping"]
+	path = ros_packages/dependencies/openslam_gmapping
+	url = https://github.com/ros-perception/openslam_gmapping
+[submodule "ros_packages/dependencies/hector_slam"]
+	path = ros_packages/dependencies/hector_slam
+	url = https://github.com/tu-darmstadt-ros-pkg/hector_slam
