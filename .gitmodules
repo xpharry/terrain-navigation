@@ -1,4 +1,4 @@
-[submodule "learning_ros_external_packages"]
+[submodule "ros_packages/dependencies/learning_ros_external_packages"]
 	path = ros_packages/dependencies/learning_ros_external_packages
 	url = https://github.com/wsnewman/learning_ros_external_packages.git
 [submodule "ros_packages/dependencies/hector_gazebo"]
