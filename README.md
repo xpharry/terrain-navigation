@@ -13,9 +13,12 @@ Since the repo contains several submodule repos, it is recommended to use the fo
 git clone --recursive https://gitub.com/xpharry/Terrain_Navigation.git
 ```
 ### 2. Install other dependencies using `sudo apt install`
-    * *gazebo_ros_pkgs*: `sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control` [Installation Guide](http://gazebosim.org/tutorials?tut=ros_installing)
-    * *costmap-2d*: `sudo apt-get install ros-kinetic-costmap-2d`
-    * *move_base_msgs*: `sudo apt-get install ros-kinetic-move-base-msgs`
+
+```
+sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
+sudo apt-get install ros-kinetic-costmap-2d
+sudo apt-get install ros-kinetic-move-base-msgs
+```
 
 ## Developing Log
 
@@ -39,3 +42,7 @@ git clone --recursive https://gitub.com/xpharry/Terrain_Navigation.git
         2. Anaconda sacrifices its convenience by setting the *PATH* variable every time.
 * Now it is fine to compile the whole workspace with `catkin_make` command.
 * Rename and reconstruct the repo for possible slitting into two: a deep learning repo and a ros package repo.
+
+**9/25:**
+
+* Update "Instruction" about git clone with repos containing submodules.
