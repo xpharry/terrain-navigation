@@ -46,3 +46,4 @@ sudo apt-get install ros-kinetic-move-base-msgs
 **9/25:**
 
 * Update "Instruction" about git clone with repos containing submodules.
+* Update README files in subflolders: replace mobot by sentry.
