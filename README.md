@@ -20,6 +20,10 @@ sudo apt-get install ros-kinetic-costmap-2d
 sudo apt-get install ros-kinetic-move-base-msgs
 ```
 
+### 3. Compile
+
+Put model files and lib files in specified position in your PC as indicated in [install notes](./ros_packages/sentry/install_notes.txt)
+
 ## Developing Log
 
 **9/20:**
