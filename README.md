@@ -15,15 +15,18 @@ git clone --recursive https://gitub.com/xpharry/Terrain_Navigation.git
 ### 2. Install other dependencies using `sudo apt install`
 
 ```
-sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control
-sudo apt-get install ros-kinetic-costmap-2d
-sudo apt-get install ros-kinetic-move-base-msgs
+sudo apt-get install ros-indigo-gazebo-ros-pkgs ros-indigo-gazebo-ros-control
+sudo apt-get install ros-indigo-costmap-2d
+sudo apt-get install ros-indigo-move-base-msgs
 ```
 
 ### 3. Compile
 
-Put model files and lib files in specified position in your PC as indicated in [install notes](./ros_packages/sentry/install_notes.txt)
+Before compile:
 
+- Put model files and lib files in specified position in your PC as indicated in [install notes](./ros_packages/sentry/install_notes.txt)
+- Change Eigen3 library to Eigen in some CMakeList.txt and package.xml files. For simplicity, just replace the CMakeList.txt and package.xml files in [sticky_fingers](./ros_packages/dependencies/learning_ros_external_packages/sticky_fingers) by those in [backup](./ros_packages/backup).
+ 
 ## Developing Log
 
 **9/20:**
@@ -37,9 +40,9 @@ Put model files and lib files in specified position in your PC as indicated in [
     <!-- * git submodule add https://github.com/ros-perception/slam_gmapping # jk not this one anymore -->
     * git submodule add https://github.com/tu-darmstadt-ros-pkg/hector_slam
 * Install other dependencies using `sudo apt install`
-    * *gazebo_ros_pkgs*: `sudo apt-get install ros-kinetic-gazebo-ros-pkgs ros-kinetic-gazebo-ros-control` [Installation Guide](http://gazebosim.org/tutorials?tut=ros_installing)
-    * *costmap-2d*: `sudo apt-get install ros-kinetic-costmap-2d`
-    * *move_base_msgs*: `sudo apt-get install ros-kinetic-move-base-msgs`
+    * *gazebo_ros_pkgs*: `sudo apt-get install ros-indigo-gazebo-ros-pkgs ros-indigo-gazebo-ros-control` [Installation Guide](http://gazebosim.org/tutorials?tut=ros_installing)
+    * *costmap-2d*: `sudo apt-get install ros-indigo-costmap-2d`
+    * *move_base_msgs*: `sudo apt-get install ros-indigo-move-base-msgs`
 * Prepare developing environment:
     * Fix the conflict between Ros and Anaconda.
         1. Comment the Anaconda setting in ~/.bashrc to disable it globally.
